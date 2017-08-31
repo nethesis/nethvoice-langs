@@ -1,5 +1,5 @@
 Name:		nethvoice-lang
-Version: 0.0.1
+Version: 1.0.0
 Release: 1%{?dist}
 Summary:	language packages for NethVoice
 Group:		Networking/Daemons
@@ -88,4 +88,7 @@ rm -rf $RPM_BUILD_ROOT
 /var/lib/asterisk/sounds/fr/*
 
 %changelog
+* Thu Aug 31 2017 Edoardo Spadoni <edoardo.spadoni@nethesis.it> - 1.0.0-1
+Release 1.0.0
+
 
