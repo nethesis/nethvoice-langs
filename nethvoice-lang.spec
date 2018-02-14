@@ -63,6 +63,7 @@ done
 rm -rf $RPM_BUILD_ROOT
 for LANG in $(ls %{_sourcedir}/asterisk-sounds* | cut -d- -f4 | sort -u); do
     mkdir -p ${RPM_BUILD_ROOT}/var/lib/asterisk/sounds/$LANG
+    mkdir -p ${RPM_BUILD_ROOT}/var/lib/asterisk/sounds/$LANG/custom
     cp -a %{_sourcedir}/$LANG/* ${RPM_BUILD_ROOT}/var/lib/asterisk/sounds/$LANG
 done
 
@@ -74,18 +75,23 @@ rm -rf $RPM_BUILD_ROOT
 %files it
 %defattr(-, root, root)
 /var/lib/asterisk/sounds/it/*
+%attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/it/custom
+
 
 %files es
 %defattr(-, root, root)
 /var/lib/asterisk/sounds/es/*
+%attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/es/custom
 
 %files de
 %defattr(-, root, root)
 /var/lib/asterisk/sounds/de/*
+%attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/de/custom
 
 %files fr
 %defattr(-, root, root)
 /var/lib/asterisk/sounds/fr/*
+%attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/fr/custom
 
 %changelog
 * Thu Aug 31 2017 Edoardo Spadoni <edoardo.spadoni@nethesis.it> - 1.0.0-1
