@@ -1,5 +1,5 @@
 Name:		nethvoice-lang
-Version: 1.0.0
+Version: 1.0.1
 Release: 1%{?dist}
 Summary:	language packages for NethVoice
 Group:		Networking/Daemons
@@ -94,6 +94,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/fr/custom
 
 %changelog
+* Fri Feb 16 2018 Stefano Fancello <stefano.fancello@nethesis.it> - 1.0.1-1
+- Create custom sound directory to allow users to save custom recordings nethesis/dev#5332
+
 * Thu Aug 31 2017 Edoardo Spadoni <edoardo.spadoni@nethesis.it> - 1.0.0-1
 Release 1.0.0
 
