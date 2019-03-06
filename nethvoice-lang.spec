@@ -38,13 +38,13 @@ Group: Utilities/System
 Spanish language pack from www.asterisksounds.org packaged for NethVoice.
 
 %package fr
-Summary: Italian language for Asterisk
+Summary: French language for Asterisk
 Group: Utilities/System
 %description fr
 French language pack from www.asterisksounds.org packaged for NethVoice.
 
 %package de
-Summary: Italian language for Asterisk
+Summary: German language for Asterisk
 Group: Utilities/System
 %description de
 German language pack from www.asterisksounds.org packaged for NethVoice.
