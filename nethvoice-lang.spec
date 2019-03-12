@@ -5,8 +5,8 @@ Summary:	language packages for NethVoice
 Group:		Networking/Daemons
 License:	GPL
 # Italian
-Source0:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/it/download/asterisk-sounds-core-it-2.9.13.zip
-Source1:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/it/download/asterisk-sounds-extra-it-2.9.13.zip
+Source0:    https://github.com/nethesis/nethvoice-it-sounds/releases/download/2.10.0/asterisk-sounds-core-it-2.10.0.zip
+Source1:    https://github.com/nethesis/nethvoice-it-sounds/releases/download/2.10.0/asterisk-sounds-extra-it-2.10.0.zip
 # Spanish
 Source2:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-core-es-ES-2.9.15.zip
 Source3:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-extra-es-ES-2.9.15.zip
