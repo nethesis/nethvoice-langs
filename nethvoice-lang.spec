@@ -1,5 +1,5 @@
 Name:		nethvoice-lang
-Version: 1.1.0
+Version: 1.1.1
 Release: 1%{?dist}
 Summary:	language packages for NethVoice
 Group:		Networking/Daemons
@@ -94,6 +94,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/fr/custom
 
 %changelog
+* Mon Nov 11 2019 Stefano Fancello <stefano.fancello@nethesis.it> - 1.1.1-1
+- add missing no-valid-responce-transfering file nethesis/dev#5715
+
 * Tue Mar 26 2019 Stefano Fancello <stefano.fancello@nethesis.it> - 1.1.0-1
 - Use italian sounds generated with Google Wavenet TTS nethesis/dev#5594
 
