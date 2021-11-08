@@ -4,9 +4,12 @@ Release: 1%{?dist}
 Summary:	language packages for NethVoice
 Group:		Networking/Daemons
 License:	GPL
+# English
+Source0:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-en-2.11.0.zip
+Source1:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-en-2.11.0.zip
 # Italian
-Source0:    https://github.com/nethesis/nethvoice-it-sounds/releases/download/2.10.0/asterisk-sounds-core-it-2.10.0.zip
-Source1:    https://github.com/nethesis/nethvoice-it-sounds/releases/download/2.10.0/asterisk-sounds-extra-it-2.10.0.zip
+Source0:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-it-2.11.0.zip
+Source1:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-it-2.11.0.zip
 # Spanish
 Source2:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-core-es-ES-2.9.15.zip
 Source3:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-extra-es-ES-2.9.15.zip
@@ -24,6 +27,12 @@ Requires: nethserver-nethvoice
 
 %description
 Language packs from www.asterisksounds.org packaged for NethVoice. 
+
+%package en
+Summary: English language for Asterisk
+Group: Utilities/System
+%description en
+English language pack from www.asterisksounds.org packaged for NethVoice. 
 
 %package it
 Summary: Italian language for Asterisk
