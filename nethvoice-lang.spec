@@ -4,9 +4,6 @@ Release: 1%{?dist}
 Summary:	language packages for NethVoice
 Group:		Networking/Daemons
 License:	GPL
-# English
-Source0:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-en-2.11.0.zip
-Source1:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-en-2.11.0.zip
 # Italian
 Source0:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-it-2.11.0.zip
 Source1:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-it-2.11.0.zip
@@ -19,6 +16,10 @@ Source5:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds
 # German
 Source6:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/de/download/asterisk-sounds-core-de-2.11.19.zip
 Source7:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/de/download/asterisk-sounds-extra-de-2.11.19.zip
+# English
+Source8:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-en-2.11.0.zip
+Source9:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-en-2.11.0.zip
+
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildArch:	noarch
 
