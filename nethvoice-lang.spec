@@ -92,6 +92,10 @@ rm -rf $RPM_BUILD_ROOT
 /var/lib/asterisk/sounds/it/*
 %attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/it/custom
 
+%files en
+%defattr(-, root, root)
+/var/lib/asterisk/sounds/en/*
+%attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/en/custom
 
 %files es
 %defattr(-, root, root)
