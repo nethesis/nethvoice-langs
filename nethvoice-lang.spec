@@ -32,7 +32,7 @@ Language packs from www.asterisksounds.org packaged for NethVoice.
 %package en
 Summary: English language for Asterisk
 Group: Utilities/System
-Provides: asterisk-sounds-core-en, asterisk-sounds-extra-en
+Provides: asterisk-sounds-core-en, asterisk-sounds-extra-en, asterisk-sounds-extra-en-ulaw
 %description en
 English language pack from www.asterisksounds.org packaged for NethVoice. 
 
