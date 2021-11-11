@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Prepare source for RPM build
+
+# NethVoice custom professional audio
+curl -sLk -H "Authorization: token  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" https://api.github.com/repos/nethesis/nethvoice-langs/releases/latest | jq -r '.assets[] | {name,url} | join(" ")' | while read NAME URL; do
+	echo "Downloading $NAME"
+	curl -L -H "Authorization: token  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" -H 'Accept: application/octet-stream' $URL -o $NAME
+done
+
+# Download other languages
+for URL in https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-core-es-ES-2.9.15.zip https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-extra-es-ES-2.9.15.zip https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/fr-FR/download/asterisk-sounds-core-fr-FR-2.3.10.zip https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/fr-FR/download/asterisk-sounds-extra-fr-FR-2.3.10.zip https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/de/download/asterisk-sounds-core-de-2.11.19.zip https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/de/download/asterisk-sounds-extra-de-2.11.19.zip; do
+	NAME=$(echo $URL | rev | cut -d/ -f1 | rev)
+	echo "Downloading $NAME"
+	curl -L $URL -o $NAME
+done
+

@@ -22,6 +22,8 @@ env:
         -e NSVER
         -e ENDPOINTS_PACK
         "
+install:
+- ./prep-sources
 
 script: >
     docker run -ti --name makerpms ${EVARS}
