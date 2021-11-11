@@ -33,6 +33,7 @@ Language packs from www.asterisksounds.org packaged for NethVoice.
 Summary: English language for Asterisk
 Group: Utilities/System
 Provides: asterisk-sounds-core-en, asterisk-sounds-extra-en, asterisk-sounds-extra-en-ulaw
+Obsoletes: asterisk-sounds-core-en, asterisk-sounds-extra-en, asterisk-sounds-extra-en-ulaw
 %description en
 English language pack from www.asterisksounds.org packaged for NethVoice. 
 
@@ -40,6 +41,7 @@ English language pack from www.asterisksounds.org packaged for NethVoice.
 Summary: Italian language for Asterisk
 Group: Utilities/System
 Provides: asterisk-sounds-core-it, asterisk-sounds-extra-it
+Obsoletes: asterisk-sounds-core-it, asterisk-sounds-extra-it
 %description it
 Italian language pack from www.asterisksounds.org packaged for NethVoice. 
 
@@ -47,6 +49,7 @@ Italian language pack from www.asterisksounds.org packaged for NethVoice.
 Summary: Spanish language for Asterisk
 Group: Utilities/System
 Provides: asterisk-sounds-core-es, asterisk-sounds-extra-es
+Obsoletes: asterisk-sounds-core-es, asterisk-sounds-extra-es
 %description es
 Spanish language pack from www.asterisksounds.org packaged for NethVoice.
 
@@ -54,6 +57,7 @@ Spanish language pack from www.asterisksounds.org packaged for NethVoice.
 Summary: French language for Asterisk
 Group: Utilities/System
 Provides: asterisk-sounds-core-fr, asterisk-sounds-extra-fr
+Obsoletes: asterisk-sounds-core-fr, asterisk-sounds-extra-fr
 %description fr
 French language pack from www.asterisksounds.org packaged for NethVoice.
 
@@ -61,6 +65,7 @@ French language pack from www.asterisksounds.org packaged for NethVoice.
 Summary: German language for Asterisk
 Group: Utilities/System
 Provides: asterisk-sounds-core-de, asterisk-sounds-extra-de
+Obsoletes: asterisk-sounds-core-de, asterisk-sounds-extra-de
 %description de
 German language pack from www.asterisksounds.org packaged for NethVoice.
 
