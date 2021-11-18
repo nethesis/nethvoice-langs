@@ -5,20 +5,20 @@ Summary:	language packages for NethVoice
 Group:		Networking/Daemons
 License:	GPL
 # Italian
-Source0:    asterisk-sounds-core-it-2.11.0.zip
-Source1:    asterisk-sounds-extra-it-2.11.0.zip
+Source0:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-it-2.11.0.zip
+Source1:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-it-2.11.0.zip
 # Spanish
-Source2:    asterisk-sounds-core-es-ES-2.9.15.zip
-Source3:    asterisk-sounds-extra-es-ES-2.9.15.zip
+Source2:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-core-es-ES-2.9.15.zip
+Source3:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-extra-es-ES-2.9.15.zip
 # French
-Source4:    asterisk-sounds-core-fr-FR-2.3.10.zip
-Source5:    asterisk-sounds-extra-fr-FR-2.3.10.zip
+Source4:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/fr-FR/download/asterisk-sounds-core-fr-FR-2.3.10.zip
+Source5:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/fr-FR/download/asterisk-sounds-extra-fr-FR-2.3.10.zip
 # German
-Source6:    asterisk-sounds-core-de-2.11.19.zip
-Source7:    asterisk-sounds-extra-de-2.11.19.zip
+Source6:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/de/download/asterisk-sounds-core-de-2.11.19.zip
+Source7:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/de/download/asterisk-sounds-extra-de-2.11.19.zip
 # English
-Source8:    asterisk-sounds-core-en-2.11.0.zip
-Source9:    asterisk-sounds-extra-en-2.11.0.zip
+Source8:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-en-2.11.0.zip
+Source9:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-en-2.11.0.zip
 
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildArch:	noarch
@@ -32,40 +32,30 @@ Language packs from www.asterisksounds.org packaged for NethVoice.
 %package en
 Summary: English language for Asterisk
 Group: Utilities/System
-Provides: asterisk-sounds-core-en, asterisk-sounds-extra-en, asterisk-sounds-extra-en-ulaw
-Obsoletes: asterisk-sounds-core-en, asterisk-sounds-extra-en, asterisk-sounds-extra-en-ulaw
 %description en
 English language pack from www.asterisksounds.org packaged for NethVoice. 
 
 %package it
 Summary: Italian language for Asterisk
 Group: Utilities/System
-Provides: asterisk-sounds-core-it, asterisk-sounds-extra-it
-Obsoletes: asterisk-sounds-core-it, asterisk-sounds-extra-it
 %description it
 Italian language pack from www.asterisksounds.org packaged for NethVoice. 
 
 %package es
 Summary: Spanish language for Asterisk
 Group: Utilities/System
-Provides: asterisk-sounds-core-es, asterisk-sounds-extra-es
-Obsoletes: asterisk-sounds-core-es, asterisk-sounds-extra-es
 %description es
 Spanish language pack from www.asterisksounds.org packaged for NethVoice.
 
 %package fr
 Summary: French language for Asterisk
 Group: Utilities/System
-Provides: asterisk-sounds-core-fr, asterisk-sounds-extra-fr
-Obsoletes: asterisk-sounds-core-fr, asterisk-sounds-extra-fr
 %description fr
 French language pack from www.asterisksounds.org packaged for NethVoice.
 
 %package de
 Summary: German language for Asterisk
 Group: Utilities/System
-Provides: asterisk-sounds-core-de, asterisk-sounds-extra-de
-Obsoletes: asterisk-sounds-core-de, asterisk-sounds-extra-de
 %description de
 German language pack from www.asterisksounds.org packaged for NethVoice.
 
