@@ -4,9 +4,10 @@ Release: 1%{?dist}
 Summary:	language packages for NethVoice
 Group:		Networking/Daemons
 License:	GPL
+Source:      %{name}-%{version}.tar.gz
 # Italian
-Source0:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-it-2.11.0.zip
-Source1:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-it-2.11.0.zip
+Source10:    https://github.com/nethesis/nethvoice-it-sounds/releases/download/2.10.0/asterisk-sounds-core-it-2.11.0.zip
+Source1:    https://github.com/nethesis/nethvoice-it-sounds/releases/download/2.10.0/asterisk-sounds-extra-it-2.11.0.zip
 # Spanish
 Source2:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-core-es-ES-2.9.15.zip
 Source3:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-extra-es-ES-2.9.15.zip
@@ -60,6 +61,7 @@ Group: Utilities/System
 German language pack from www.asterisksounds.org packaged for NethVoice.
 
 %prep
+%setup
 for LANG in $(ls %{_sourcedir}/asterisk-sounds* | cut -d- -f4 | sort -u); do
     mkdir -p %{_sourcedir}/$LANG
     for FILE in $(ls %{_sourcedir}/asterisk-sounds-*-$LANG-*.zip); do
@@ -86,6 +88,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-, root, root)
 /var/lib/asterisk/sounds/it/*
 %attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/it/custom
+%doc COPYING
 
 %files en
 %defattr(-, root, root)
