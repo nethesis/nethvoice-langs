@@ -1,13 +1,13 @@
 Name:		nethvoice-lang
-Version: 1.1.1
+Version: 2.0.0
 Release: 1%{?dist}
 Summary:	language packages for NethVoice
 Group:		Networking/Daemons
 License:	GPL
 Source:      %{name}-%{version}.tar.gz
 # Italian
-Source10:    https://github.com/nethesis/nethvoice-it-sounds/releases/download/2.10.0/asterisk-sounds-core-it-2.11.0.zip
-Source1:    https://github.com/nethesis/nethvoice-it-sounds/releases/download/2.10.0/asterisk-sounds-extra-it-2.11.0.zip
+Source10:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-it-2.11.0.zip
+Source1:     https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-it-2.11.0.zip
 # Spanish
 Source2:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-core-es-ES-2.9.15.zip
 Source3:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-extra-es-ES-2.9.15.zip
@@ -111,6 +111,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/fr/custom
 
 %changelog
+* Mon Dec 06 2021 Stefano Fancello <stefano.fancello@nethesis.it> - 2.0.0-1
+- Use professional voices for English and Italian audio files - nethesis/dev#6085
+
 * Mon Nov 11 2019 Stefano Fancello <stefano.fancello@nethesis.it> - 1.1.1-1
 - add missing no-valid-responce-transfering file nethesis/dev#5715
 
