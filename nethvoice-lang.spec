@@ -6,8 +6,8 @@ Group:		Networking/Daemons
 License:	GPL
 Source:      %{name}-%{version}.tar.gz
 # Italian
-Source10:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-it-2.11.0.zip
-Source1:     https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-it-2.11.0.zip
+Source10:    https://github.com/nethesis/nethvoice-langs/releases/download/2.0.0/asterisk-sounds-core-it-2.11.1.zip
+Source1:     https://github.com/nethesis/nethvoice-langs/releases/download/2.0.0/asterisk-sounds-extra-it-2.11.1.zip
 # Spanish
 Source2:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-core-es-ES-2.9.15.zip
 Source3:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/es-ES/download/asterisk-sounds-extra-es-ES-2.9.15.zip
@@ -18,8 +18,8 @@ Source5:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds
 Source6:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/de/download/asterisk-sounds-core-de-2.11.19.zip
 Source7:    https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/de/download/asterisk-sounds-extra-de-2.11.19.zip
 # English
-Source8:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-core-en-2.11.0.zip
-Source9:    https://github.com/nethesis/nethvoice-langs/releases/download/1.1.1/asterisk-sounds-extra-en-2.11.0.zip
+Source8:    https://github.com/nethesis/nethvoice-langs/releases/download/2.0.0/asterisk-sounds-core-en-2.11.1.zip
+Source9:    https://github.com/nethesis/nethvoice-langs/releases/download/2.0.0/asterisk-sounds-extra-en-2.11.1.zip
 
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildArch:	noarch
