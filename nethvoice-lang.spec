@@ -1,5 +1,5 @@
 Name:		nethvoice-lang
-Version: 2.0.0
+Version: 2.0.1
 Release: 1%{?dist}
 Summary:	language packages for NethVoice
 Group:		Networking/Daemons
@@ -111,6 +111,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(0755,asterisk,asterisk) %dir /var/lib/asterisk/sounds/fr/custom
 
 %changelog
+* Mon Feb 14 2022 Stefano Fancello <stefano.fancello@nethesis.it> - 2.0.1-1
+- NethVoice new voice recording has a "click" when recording is started - Bug nethesis/dev#6111
+
 * Mon Dec 06 2021 Stefano Fancello <stefano.fancello@nethesis.it> - 2.0.0-1
 - Use professional voices for English and Italian audio files - nethesis/dev#6085
 
